@@ -1,0 +1,30 @@
+
+/*-------------index.html--------------------*/
+
+.users{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+}
+.users:nth-child(n) div{
+    padding: 20px;
+    flex:45%
+}
+.users p{
+    text-align: center;
+}
+.users a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.users a button{
+    padding: 5px 50px;
+    font-size: 20px;
+}
+
+
+/*-------------user-details.html--------------------*/
+
+
