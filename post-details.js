@@ -20,8 +20,6 @@ async function userPost () {
 
 
 
-
-
         section.append(post)
         post.append(postId, postUserId, name, postEmail, postBody)
         document.body.append(section)
