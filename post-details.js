@@ -19,7 +19,6 @@ async function userPost () {
         postBody.innerText = `body : ${item.body}`
 
 
-
         section.append(post)
         post.append(postId, postUserId, name, postEmail, postBody)
         document.body.append(section)
