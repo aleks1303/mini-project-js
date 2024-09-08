@@ -4,7 +4,7 @@ async function userPost () {
     let user = await fetch('https://jsonplaceholder.typicode.com/comments')
         .then(value => value.json())
     const section = document.createElement('section')
-    section.classList.add ('section')
+    section.classList.add ('section-post')
     for (const item of user) {
         const post = document.createElement('div')
         const postId = document.createElement('p')
@@ -25,3 +25,7 @@ async function userPost () {
     }
 }
 userPost()
+
+
+// post-details.html - блок з інфою про пост зверху. Коментарі - по 4 в ряд.
+// //     Всі елементи котрі характеризують users, posts, comments візуалізувати, так, щоб було видно що це блоки (дати фон. марджини і тд)

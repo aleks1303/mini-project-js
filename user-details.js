@@ -1,15 +1,10 @@
-//
-// На странице user-details.html:
-// // 4 Вивести всю, без виключення, інформацію про об'єкт user на який клікнули
-// // 5 Додати кнопку "post of current user", при кліку на яку, з'являються title всіх постів поточного юзера
-// // (для получения постов используйте эндпоинт https://jsonplaceholder.typicode.com/users/USER_ID/posts)
-// //     6 Каждому посту додати кнопку/посилання, при кліку на яку відбувається перехід на сторінку post-details.html, котра має детальну інфу про поточний пост.
-// //
+
 
 async function userDetails () {
     let user = await fetch('https://jsonplaceholder.typicode.com/users')
         .then(value => value.json())
     const userSection = document.createElement('section')
+    userSection.classList.add('section-user')
     for (const item of user) {
         const userData = document.createElement('div')
         const userBlock = document.createElement('div')
@@ -88,3 +83,8 @@ async function userDetails () {
     }
 }
 userDetails()
+
+
+
+// user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.
+//    блоки з короткою іфною про post - в ряд по 5 .
