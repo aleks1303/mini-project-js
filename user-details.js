@@ -50,7 +50,7 @@ async function userDetails () {
         const button = document.createElement('button')
         button.innerText = `post of current user`
         // button.onclick = function (){
-        //     fetch('https://jsonplaceholder.typicode.com/users/USER_ID/posts')
+        //     fetch('https://jsonplaceholder.typicode.com/posts')
         //         .then(value => value.json())
         //         .then(value => {
         //             for (const title of value) {
@@ -58,8 +58,6 @@ async function userDetails () {
         //                 if (userId.value === 1){
         //                     title.innerText = `title : ${title}`
         //                 }
-        //
-        //
         //                 console.log(title, button)
         //                 button.append(title)
         //             }
@@ -84,7 +82,3 @@ async function userDetails () {
 }
 userDetails()
 
-
-
-// user-details.html - блок з інфою про user зверху сторінки. Кнопка нижчє, на 90% ширини сторінки, по центру.
-//    блоки з короткою іфною про post - в ряд по 5 .
